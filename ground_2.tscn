@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dlwintjx288xa"]
+
+[ext_resource type="PackedScene" uid="uid://ddqwpb6kdcpgu" path="res://grass.glb" id="1_htawj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gyc6d"]
+size = Vector3(7.253723, 0.16992188, 3.1535645)
+
+[node name="ground2" type="StaticBody3D" unique_id=2091357991]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=391785095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7096914, -1.923681, -0.021309495)
+shape = SubResource("BoxShape3D_gyc6d")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=784267883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7096914, 7.3468676, -0.021309495)
+shape = SubResource("BoxShape3D_gyc6d")
+
+[node name="blockbench_export" parent="." unique_id=687299767 instance=ExtResource("1_htawj")]
+transform = Transform3D(29.173285, 0, 0, 0, 8.476253, 0, 0, 0, 26.516878, -0.7214045, -2.9378707, 0.13465059)
